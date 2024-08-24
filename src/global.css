@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'HeroFont';
+  src: url('../public/font/HeroFont.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'ContentFont';
+  src: url('../public/font/Poppins.ttf') format('truetype');
+  font-weight: 400;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,9 +22,4 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: black;
-}
-
-h1 {
-  font-size: 3.2em;
-  color: #ffffff;
 }
