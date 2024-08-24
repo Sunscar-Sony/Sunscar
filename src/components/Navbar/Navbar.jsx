@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import './Navbar.css'
+import { useState } from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src='/images/logo.svg' alt='logo-image' />
+        <img src="/images/logo.svg" alt="logo-image" />
       </div>
-      <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
+      <div className={`navbar-links ${isOpen ? "active" : ""}`}>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Skills</a>
