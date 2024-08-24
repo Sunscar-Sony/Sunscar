@@ -6,15 +6,16 @@
 }
 
 .navbar-logo img {
-  padding: 4px;
-  height: 50px;
+  height: 70px;
+  margin-left: 20px;
 }
 
 .navbar-links {
-  padding: 12px;
+  padding: 14px;
   border-radius: 1rem;
   font-family: 'ContentFont', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   background-color: #ffffff38;
   backdrop-filter: blur(10px);
   display: flex;
@@ -32,13 +33,14 @@
 
 .navbar-links a:hover,
 .navbar-button:hover {
-  background-color: #555;
+  color: #5900ff;
+  border-radius: 12px;
 }
 
 .navbar-button {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: ContentFont, sans-serif;
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: #5900ff;
   border: none;
   cursor: pointer;
@@ -51,22 +53,39 @@
 }
 
 .hamburger .bar {
-  width: 25px;
+  width: 32px;
   height: 3px;
   background-color: #fff;
   margin: 4px 0;
 }
 
 @media (max-width: 768px) {
+  .navbar{
+    background-color: #333;
+    backdrop-filter: blur(10px);
+    margin: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 200px;
+  }
+  .navbar-logo{
+    margin-right: 10px;
+  }
+   .navbar-logo img{
+    height: 40px;
+   }
   .navbar-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 90px;
     right: 10px;
+    gap: 1rem;
+    margin-top: 1rem;
     background-color: #333;
+    backdrop-filter: blur(10px);
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 12px;
   }
 
   .navbar-links.active {
@@ -74,6 +93,7 @@
   }
 
   .hamburger {
+    margin-right: 20px;
     display: flex;
   }
 }
