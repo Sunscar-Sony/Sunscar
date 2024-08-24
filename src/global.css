@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'HeroFont';
-  src: url('../public/font/HeroFont.woff') format('truetype');
+  src: url('/font/HeroFont.woff') format('truetype');
 }
 
 * {
@@ -17,5 +17,16 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  background-color: black;
+  background-image: url(/images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(/images/bg-mob.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
