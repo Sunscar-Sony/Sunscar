@@ -14,53 +14,65 @@ const Hero = () => {
         <br />
 
         <p className="hero-content">
-          Hello! I&apos;m Sanskar Soni, a full-stack developer and competitive
-          coder with a strong foundation in Data Structures and Algorithms
-          (DSA). I specialize in building seamless and responsive web
-          applications, with expertise spanning both front-end and back-end
-          development. My passion for UI/UX design allows me to create
-          intuitive, user-centered interfaces that enhance the digital
-          experience. Whether it&apos;s architecting complex systems, solving
-          intricate coding challenges, or designing elegant interfaces, I am
-          dedicated to turning ideas into impactful digital solutions.
-          Let&apos;s work together to bring your vision to life!
+          Hi! I&apos;m Sanskar Soni, a full-stack developer and competitive
+          coder with expertise in DSA. I build seamless, responsive web apps,
+          focusing on both front-end and back-end development. Passionate about
+          UI/UX design, I create intuitive, user-centered interfaces. Let&apos;s
+          turn your ideas into impactful digital solutions!
         </p>
+
         <div className="hero-social-icons">
           <a
-            href="https://linkedin.com"
+            href="https://linkedfdin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/path-to-your-icons/linkedin.svg" alt="LinkedIn" />
+            <video
+              src="../public/icons/linkedin.mp4"
+              alt="LinkedIn"
+              autoPlay
+              loop
+              muted
+            />
           </a>
           <a
-            href="https://github.com"
+            href="https://githddub.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/path-to-your-icons/github.svg" alt="GitHub" />
+            <video
+              src="../public/icons/github.mp4"
+              alt="GitHub"
+              autoPlay
+              loop
+              muted
+            />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://instadfbgram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/path-to-your-icons/instagram.svg" alt="Instagram" />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/path-to-your-icons/twitter.svg" alt="Twitter" />
+            <video
+              src="../public/icons/gmail.mp4"
+              alt="Instagram"
+              autoPlay
+              loop
+              muted
+            />
           </a>
         </div>
       </div>
       <div className="hero-right">
         <img
-          src="https://via.placeholder.com/400"
+          src="../public/images/hero.png"
           alt="Hero"
           className="hero-image"
+        />
+        <img
+          src="../public/images/hero-circle.svg"
+          alt="Rotating Ring"
+          className="ring-image"
         />
       </div>
     </div>

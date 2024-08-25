@@ -4,10 +4,10 @@ import Hero from './components/HeroSection/Hero'
 
 function App() {
   return (
-    <>
+    <div className='container'>
     <Navbar />
     <Hero />
-    </>
+    </div>
   )
 }
 
