@@ -1,0 +1,151 @@
+.hero {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-left {
+    color: #fff;
+    flex: 1;
+    padding: 4rem;
+}
+
+.hero-heading {
+    background: #6D08CF;
+    background: linear-gradient(to right, #00f6f2 14%, #0b33fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: HeroFont, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0;
+    animation: typing 6s steps(40, end) 1s infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    70% {
+        width: 100%;
+    }
+
+    90% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+
+    /* Reset width for the next loop */
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.hero-subheading {
+    color: #fff;
+    font-family: HeroFont, sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content {
+    color: #c0bebe;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-social-icons a {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.hero-social-icons a:hover {
+    color: #0077b5;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: scaleUp 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left {
+        padding: 1rem;
+    }
+
+    .hero-right {
+        margin-bottom: 2rem;
+    }
+
+    .hero-heading {
+        font-size: 2.5rem;
+    }
+
+    .hero-subheading {
+        font-size: 1.75rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
