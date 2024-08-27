@@ -73,20 +73,7 @@ const Hero = () => {
           src="../public/images/hero-circle.svg"
           alt="Rotating Ring"
           className="ring-image"
-        />
-
-        <img
-          src="../public/images/hero-circle.svg"
-          alt="Rotating Ring"
-          className="ring-image"
-        />
-        <img
-          src="../public/images/hero-circle.svg"
-          alt="Rotating Ring"
-          className="ring-image"
-        />
-
-        
+        />        
       </div>
     </div>
   );
