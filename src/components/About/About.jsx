@@ -26,19 +26,19 @@ const About = () => {
           <img src="/images/about.svg" alt="About Me" />
         </div>
         <div className="about-image scattered-image image-1">
-          <img src="../public/images/hero-circle.svg" alt="Small Image 1" />
+          <img src="/about/img-1.png" alt="Small Image 1" />
         </div>
         <div className="about-image scattered-image image-2">
-          <img src="../public/images/hero-circle.svg" alt="Small Image 2" />
+          <img src="/about/img-2.png" alt="Small Image 2" />
         </div>
         <div className="about-image scattered-image image-3">
-          <img src="../public/images/hero-circle.svg" alt="Small Image 3" />
+          <img src="/about/img-3.png" alt="Small Image 3" />
         </div>
         <div className="about-image scattered-image image-4">
-          <img src="../public/images/hero-circle.svg" alt="Small Image 4" />
+          <img src="/about/img-4.png" alt="Small Image 4" />
         </div>
         <div className="about-image scattered-image image-5">
-          <img src="../public/images/hero-circle.svg" alt="Small Image 5" />
+          <img src="/about/img-5.png" alt="Small Image 5" />
         </div>
       </div>
       <div className="about-content">
