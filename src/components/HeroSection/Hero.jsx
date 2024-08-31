@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-left">
         <h1 className="hero-heading typing-animation">
-          Hey! it&apos;s Sanskar Soni
+          Hey!&nbsp; it&apos;s Sanskar Soni
         </h1>
         <br />
         <h2 className="hero-subheading">
