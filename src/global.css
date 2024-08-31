@@ -19,10 +19,30 @@ body {
   min-height: 100vh;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 768px) {
   body {
     background-image: url(/images/bg-mob.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #000000a9;
+  backdrop-filter: blur(10px);
+}
+::-webkit-scrollbar-thumb {
+  background: blueviolet;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(137, 43, 226, 0.715);
 }

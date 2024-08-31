@@ -57,11 +57,20 @@
   
     .about-image img {
       width: 100%;
-      max-width: 300px;
+      padding-top: 20px;
+      max-width: 380px;
     }
   
     .about-content {
-      margin-top: 20px;
+      margin-top: 40px;
+    }
+
+    .about-content h1{
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
     }
   }
   
