@@ -1,33 +1,32 @@
-import React from 'react';
-import { useInView } from 'react-intersection-observer'; // Import scroll reveal library
-import './Skill.css'; // Import the external CSS
+import { useInView } from "react-intersection-observer";
+import "./Skill.css";
 
 const skills1 = [
-  { name: 'HTML', image: '/path/to/html.png' },
-  { name: 'CSS', image: '/path/to/css.png' },
-  { name: 'JavaScript', image: '/path/to/js.png' },
-  { name: 'React', image: '/path/to/react.png' },
-  { name: 'TypeScript', image: '/path/to/typescript.png' },
-  { name: 'Sass', image: '/path/to/sass.png' },
-  { name: 'Webpack', image: '/path/to/webpack.png' },
-  { name: 'Babel', image: '/path/to/babel.png' },
-  { name: 'Jest', image: '/path/to/jest.png' },
-  { name: 'GraphQL', image: '/path/to/graphql.png' },
-  { name: 'Tailwind CSS', image: '/path/to/tailwind.png' },
+  { name: "HTML", image: "/skills/angularjs.png" },
+  { name: "CSS", image: "/skills/css3.png" },
+  { name: "JavaScript", image: "/skills/javascript.png" },
+  { name: "React", image: "/skills/angularjs.png" },
+  { name: "TypeScript", image: "/skills/php.png" },
+  { name: "Sass", image: "/skills/python.png" },
+  { name: "Webpack", image: "/skills/tailwind.png" },
+  { name: "Babel", image: "/skills/angularjs.png" },
+  { name: "Jest", image: "/skills/angularjs.png" },
+  { name: "GraphQL", image: "/skills/css3.png" },
+  { name: "Tailwind CSS", image: "/skills/angularjs.png" },
 ];
 
 const skills2 = [
-  { name: 'Node.js', image: '/path/to/node.png' },
-  { name: 'MongoDB', image: '/path/to/mongo.png' },
-  { name: 'Python', image: '/path/to/python.png' },
-  { name: 'Git', image: '/path/to/git.png' },
-  { name: 'Docker', image: '/path/to/docker.png' },
-  { name: 'Kubernetes', image: '/path/to/kubernetes.png' },
-  { name: 'AWS', image: '/path/to/aws.png' },
-  { name: 'Firebase', image: '/path/to/firebase.png' },
-  { name: 'SQL', image: '/path/to/sql.png' },
-  { name: 'Express.js', image: '/path/to/express.png' },
-  { name: 'REST API', image: '/path/to/rest.png' },
+  { name: "Node.js", image: "/path/to/node.png" },
+  { name: "MongoDB", image: "/path/to/mongo.png" },
+  { name: "Python", image: "/path/to/python.png" },
+  { name: "Git", image: "/path/to/git.png" },
+  { name: "Docker", image: "/path/to/docker.png" },
+  { name: "Kubernetes", image: "/path/to/kubernetes.png" },
+  { name: "AWS", image: "/path/to/aws.png" },
+  { name: "Firebase", image: "/path/to/firebase.png" },
+  { name: "SQL", image: "/path/to/sql.png" },
+  { name: "Express.js", image: "/path/to/express.png" },
+  { name: "REST API", image: "/path/to/rest.png" },
 ];
 
 const Skill = () => {
@@ -37,9 +36,17 @@ const Skill = () => {
   });
 
   return (
-    <div className={`skills-section ${inView ? 'reveal' : ''}`} ref={skillsRef}>
-      <h1 className="skills-heading">My Skills</h1>
-      
+    <div className={`skills-section ${inView ? "reveal" : ""}`} ref={skillsRef}>
+      <div className="content">
+        <h1 className="skills-heading">My Skills</h1>
+        <p className="skills-content">
+          I have experience in building dynamic web applications with JavaScript
+          and React.js, designing responsive interfaces with CSS, and developing
+          server-side solutions with Node.js. I am skilled in version control
+          with Git and managing SQL databases, with a solid grasp of modern web
+          development practices and a commitment to ongoing learning.
+        </p>
+      </div>
       <div className="carousel-container">
         <div className="carousel carousel1">
           <div className="carouselInner">
@@ -51,7 +58,7 @@ const Skill = () => {
             ))}
           </div>
         </div>
-        
+
         <div className="carousel carousel2">
           <div className="carouselInner">
             {[...skills2, ...skills2].map((skill, index) => (

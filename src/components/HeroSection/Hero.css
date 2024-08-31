@@ -59,7 +59,7 @@
 
 
 .hero-subheading {
-    color: #fff;
+    color: #f3f3f3;
     font-family: HeroFont, sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
@@ -69,7 +69,7 @@
 .hero-content {
     color: #c0bebe;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
