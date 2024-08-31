@@ -2,10 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
     height: 100vh;
     padding: 50px;
     box-sizing: border-box;
+    background-image: url('/public/about/about-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
   }
 
   .about-image img {
