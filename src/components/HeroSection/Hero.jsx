@@ -28,7 +28,7 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <video
-              src="../public/icons/linkedin.mp4"
+              src=" /icons/linkedin.mp4"
               alt="LinkedIn"
               autoPlay
               loop
@@ -41,7 +41,7 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <video
-              src="../public/icons/github.mp4"
+              src=" /icons/github.mp4"
               alt="GitHub"
               autoPlay
               loop
@@ -54,7 +54,7 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <video
-              src="../public/icons/gmail.mp4"
+              src=" /icons/gmail.mp4"
               alt="Instagram"
               autoPlay
               loop
@@ -65,12 +65,12 @@ const Hero = () => {
       </div>
       <div className="hero-right">
         <img
-          src="../public/images/hero.png"
+          src=" /images/hero.png"
           alt="Hero"
           className="hero-image"
         />
         <img
-          src="../public/images/hero-circle.svg"
+          src=" /images/hero-circle.svg"
           alt="Rotating Ring"
           className="ring-image"
         />        

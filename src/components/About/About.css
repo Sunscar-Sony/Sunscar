@@ -5,7 +5,7 @@
     height: 100vh;
     padding: 50px;
     box-sizing: border-box;
-    background-image: url('/public/about/about-bg.svg');
+    background-image: url('/about/about-bg.svg');
     background-size: cover;
     background-repeat: no-repeat;
 
