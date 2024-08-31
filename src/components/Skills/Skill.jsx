@@ -16,17 +16,17 @@ const skills1 = [
 ];
 
 const skills2 = [
-  { name: "Node.js", image: "/path/to/node.png" },
-  { name: "MongoDB", image: "/path/to/mongo.png" },
-  { name: "Python", image: "/path/to/python.png" },
-  { name: "Git", image: "/path/to/git.png" },
-  { name: "Docker", image: "/path/to/docker.png" },
-  { name: "Kubernetes", image: "/path/to/kubernetes.png" },
-  { name: "AWS", image: "/path/to/aws.png" },
-  { name: "Firebase", image: "/path/to/firebase.png" },
-  { name: "SQL", image: "/path/to/sql.png" },
-  { name: "Express.js", image: "/path/to/express.png" },
-  { name: "REST API", image: "/path/to/rest.png" },
+  { name: "Node.js", image: "/skills/angularjs.png" },
+  { name: "MongoDB", image: "/skills/css3.png" },
+  { name: "Python", image: "/skills/javascript.png" },
+  { name: "Git", image: "/skills/angularjs.png" },
+  { name: "Docker", image: "/skills/php.png" },
+  { name: "Kubernetes", image: "/skills/tailwind.png" },
+  { name: "AWS", image: "/skills/angularjs.png" },
+  { name: "Firebase", image: "/skills/python.png" },
+  { name: "SQL", image: "/skills/tailwind.png" },
+  { name: "Express.js", image: "/skills/css3.png" },
+  { name: "REST API", image: "/skills/python.png" },
 ];
 
 const Skill = () => {
@@ -36,7 +36,11 @@ const Skill = () => {
   });
 
   return (
-    <div className={`skills-section ${inView ? "reveal" : ""}`} ref={skillsRef}>
+    <div
+      className={`skills-section ${inView ? "reveal" : ""}`}
+      ref={skillsRef}
+      id="skills"
+    >
       <div className="content">
         <h1 className="skills-heading">My Skills</h1>
         <p className="skills-content">
