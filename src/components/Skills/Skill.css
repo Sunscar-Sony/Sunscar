@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     flex-direction: column;
     width: 100%;
 }
@@ -63,8 +63,8 @@
 .carousel {
     position: relative;
     overflow: hidden;
-    padding: 30px;
-    width: 90%;
+    padding: 20px;
+    width: 100%;
 }
 
 .carouselInner {
@@ -81,7 +81,6 @@
 .carousel2 .carouselInner {
     animation: scroll-right 20s linear infinite;
     transform: rotate(5deg);
-    animation-delay: 10s;
 }
 
 @keyframes scroll-left {
@@ -106,7 +105,7 @@
 
 .card {
     flex: 0 0 160px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     background-color: #0000005d;
     backdrop-filter: blur(5px);
@@ -130,7 +129,7 @@
 }
 
 .card h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-top: 15px;
 }
