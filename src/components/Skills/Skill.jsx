@@ -35,6 +35,7 @@ const Skill = () => {
     threshold: 0.1,
   });
 
+
   return (
     <div
       className={`skills-section ${inView ? "reveal" : ""}`}

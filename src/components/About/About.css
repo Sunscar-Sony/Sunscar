@@ -5,9 +5,9 @@
   height: 100vh;
   padding: 50px;
   box-sizing: border-box;
-  background-image: url('/about/about-bg.svg');
+  /* background-image: url('/about/about-bg.svg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 
 }
 
