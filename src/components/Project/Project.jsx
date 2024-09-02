@@ -48,7 +48,7 @@ const Project = () => {
               vendors.
             </p>
             <div className="card-button-wrap">
-              <button className="custom-button">Learn More</button>
+              <button className="custom-button">View Project</button>
             </div>
           </div>
           <div className="project-card">
@@ -64,7 +64,7 @@ const Project = () => {
               user experience.
             </p>
             <div className="card-button-wrap">
-              <button className="custom-button">Learn More</button>
+              <button className="custom-button">View Project</button>
             </div>
           </div>
           <div className="project-card">
@@ -79,7 +79,7 @@ const Project = () => {
               and route information to enhance student commuting.
             </p>
             <div className="card-button-wrap">
-              <button className="custom-button">Learn More</button>
+              <button className="custom-button">View Project</button>
             </div>
           </div>
         </div>
