@@ -1,5 +1,5 @@
 .project-section {
-  padding:20px;
+  padding: 20px;
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -32,10 +32,9 @@
 
 .project-section-content {
   font-size: 1.2rem;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 40px;
   color: rgb(185, 185, 185);
-  margin-bottom: 40px;
 }
 
 .project-cards-container {
@@ -55,6 +54,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 380px;
   height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .project-card:hover {
@@ -70,7 +75,7 @@
 .project-card-heading {
   font-size: 1.4rem;
   margin: 15px 0;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #ffffff;
 }
@@ -78,27 +83,99 @@
 .project-card-content {
   color: rgb(185, 185, 185);
   font-size: 1.1rem;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.project-card-button {
-  display: inline-block;
-  padding: 10px 20px;
+.card-button-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.custom-button {
+  width: 180px;
+  height: 50px;
+  display: inline-flex;
+  font-family: 'poppins', sans-serif;
   font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  color: #000000;
+  background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
   border: none;
-  border-radius: 5px;
+  border-radius: 100px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  outline: none;
+  position: relative;
+  padding: 12px;
 }
 
-.project-card-button:hover {
-  background-color: #0056b3;
+.custom-button::before {
+  content: '';
+  border-radius: 1000px;
+  width: calc(180px + 3px);
+  height: calc(50px + 3px);
+  border: 4px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Responsive Styles */
+.custom-button:hover,
+.custom-button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.custom-button:hover::before,
+.custom-button:focus::before {
+  opacity: 1;
+}
+
+.custom-button::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 8px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.custom-button:hover::after,
+.custom-button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .project-main-heading {
     font-size: 2rem;
@@ -113,6 +190,11 @@
     max-width: 100%;
     flex: 1 1 100%;
   }
+
+  .custom-button {
+    min-width: 250px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -123,5 +205,10 @@
   .project-section-content {
     font-size: 0.9rem;
     margin-bottom: 20px;
+  }
+
+  .custom-button {
+    min-width: 200px;
+    font-size: 16px;
   }
 }
