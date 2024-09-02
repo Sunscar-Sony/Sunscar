@@ -25,25 +25,27 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="project-section" ref={sectionRef}>
+    <section className="project-section" ref={sectionRef} id="projects">
       <div className="project-container">
-        <h1 className="project-main-heading">Our Projects</h1>
+        <h1 className="project-main-heading">My Projects</h1>
         <p className="project-section-content">
-          Explore our innovative projects and see how we turn ideas into
-          reality. Each project showcases our commitment to excellence and
-          creativity.
+          Explore my projects to see how I transform innovative ideas into
+          impactful solutions. Each project showcases my skills, creativity, and
+          commitment to excellence.
         </p>
+
         <div className="project-cards-container">
           <div className="project-card">
             <img
-              src="path/to/image1.jpg"
-              alt="Project 1"
+              src="/projects/foodbash.png"
+              alt="FoodBash"
               className="project-card-image"
             />
-            <h2 className="project-card-heading">Project 1</h2>
+            <h2 className="project-card-heading">FoodBash</h2>
             <p className="project-card-content">
-              Description of Project 1. Highlighting key features and
-              achievements.
+              A campus-focused online food delivery app, available on web and
+              mobile. FoodBash simplifies ordering and tracking food from campus
+              vendors.
             </p>
             <div className="card-button-wrap">
               <button className="custom-button">Learn More</button>
@@ -51,14 +53,15 @@ const Project = () => {
           </div>
           <div className="project-card">
             <img
-              src="path/to/image2.jpg"
-              alt="Project 2"
+              src="/projects/ignitia.png"
+              alt="IGNITIA 2K24"
               className="project-card-image"
             />
-            <h2 className="project-card-heading">Project 2</h2>
+            <h2 className="project-card-heading">IGNITIA 2K24</h2>
             <p className="project-card-content">
-              Description of Project 2. Emphasizing innovative solutions and
-              impact.
+              A vibrant website for the college techno-cultural fest 2024,
+              offering event details and interactive features for an engaging
+              user experience.
             </p>
             <div className="card-button-wrap">
               <button className="custom-button">Learn More</button>
@@ -66,13 +69,14 @@ const Project = () => {
           </div>
           <div className="project-card">
             <img
-              src="path/to/image3.jpg"
-              alt="Project 3"
+              src="/projects/bustrek.png"
+              alt="BusTrek"
               className="project-card-image"
             />
-            <h2 className="project-card-heading">Project 3</h2>
+            <h2 className="project-card-heading">BusTrek</h2>
             <p className="project-card-content">
-              Description of Project 3. Showcasing results and key benefits.
+              A real-time bus tracking system for campus, providing live updates
+              and route information to enhance student commuting.
             </p>
             <div className="card-button-wrap">
               <button className="custom-button">Learn More</button>
