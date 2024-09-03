@@ -1,18 +1,20 @@
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
+    background-color: #ffffff24;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 80px;
     animation: fadeIn 1.5s ease-in-out;
   }
   
   .footer-container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
     width: 100%;
-    gap: 20px;
+    gap: 40px;
   }
   
   .footer-column {
@@ -25,7 +27,8 @@
   }
   
   .footer-logo {
-    width: 120px;
+    height: 60px;
+    width: auto;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
   }
@@ -35,15 +38,13 @@
   }
   
   .footer-heading {
-    font-size: 24px;
     margin: 0;
-    font-weight: 600;
-    color: #f0a500;
+    color: rgb(181, 181, 181);
+    font-size: 2rem;
+    font-weight: 550;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
     transition: color 0.3s ease;
-  }
-  
-  .footer-heading:hover {
-    color: #e09b00;
   }
   
   .footer-quick-links {
@@ -62,12 +63,15 @@
   .footer-quick-links ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-family: poppins, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 450;
     transition: color 0.3s ease;
   }
   
   .footer-quick-links ul li a:hover {
-    color: #f0a500;
+    color: rgb(132, 0, 255);
+    transition: all 0.2s ease-in-out;
   }
   
   .footer-connect-form {
@@ -81,25 +85,31 @@
     gap: 10px;
   }
   
-  .footer-connect-form label {
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-  
-  .footer-connect-form input {
+  .footer-connect-form input,
+  .footer-connect-form textarea {
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
-    max-width: 300px;
-    font-size: 16px;
+    max-width: 380px;
+    font-size: 1rem;
+    font-family: poppins, sans-serif;
+    background-color: #444;
+    color: white;
+  }
+  
+  .footer-connect-form input::placeholder,
+  .footer-connect-form textarea::placeholder {
+    color: #bbb;
   }
   
   .footer-connect-form button {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    background-color: #f0a500;
+    border-radius: 20px;
+    background-color: #8a2be2;
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -107,15 +117,15 @@
   }
   
   .footer-connect-form button:hover {
-    background-color: #e09b00;
+    background-color: #7a1dcb;
     transform: scale(1.05);
   }
   
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;
-      gap: 20px;
       align-items: center;
+      gap: 6px;
     }
   
     .footer-column {
@@ -123,7 +133,18 @@
     }
   
     .footer-logo {
-      width: 100px;
+      height: 40px;
+      width: auto;
+    }
+
+    .footer-heading {
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    .footer-connect-form input,
+    .footer-connect-form textarea{
+      width: 320px;
     }
   }
   
@@ -135,4 +156,3 @@
       opacity: 1;
     }
   }
-  

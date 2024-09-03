@@ -2,7 +2,7 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="hero-left">
         <h1 className="hero-heading typing-animation">
           Hey!&nbsp; it&apos;s Sanskar Soni
