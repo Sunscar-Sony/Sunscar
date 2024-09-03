@@ -1,18 +1,15 @@
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  padding: 50px;
+  justify-content: center;
+  padding: 30px;
   box-sizing: border-box;
-  /* background-image: url('/about/about-bg.svg');
-  background-size: cover;
-  background-repeat: no-repeat; */
+  min-height: 100vh;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -38,7 +35,7 @@
 
 .about-content h1 {
   color: white;
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -46,7 +43,7 @@
 
 .about-content p {
   color: rgb(185, 185, 185);
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -59,6 +56,9 @@
   .about-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
   }
 
   .about-image-wrapper {
@@ -87,7 +87,7 @@
   }
 
   .about-content p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 

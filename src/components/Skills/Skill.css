@@ -4,10 +4,12 @@
     text-align: center;
     opacity: 0;
     transform: translateY(50px);
-    height: 100vh;
+    min-height: 100vh;
     transition: opacity 1s, transform 2s;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
 .skills-section.reveal {
@@ -24,7 +26,7 @@
 }
 
 .skills-heading {
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-family: poppins, sans-serif;
     font-weight: 600;
     color: #fff;
@@ -35,7 +37,6 @@
 .skills-content {
     align-self: center;
     font-family: poppins, sans-serif;
-    font-size: 1rem;
     width: 100%;
     max-width: 1400px;
     text-align: center;
@@ -43,7 +44,7 @@
 
 .content p {
     color: rgb(185, 185, 185);
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -136,7 +137,7 @@
 
 @media (max-width: 1024px) {
     .card {
-        flex: 0 0 220px;
+        flex: 0 0 120px;
     }
 
     .card h3 {
@@ -154,7 +155,7 @@
     }
 
     .card {
-        flex: 0 0 180px;
+        flex: 0 0 120px;
         margin: 15px;
     }
 
@@ -177,16 +178,17 @@
     }
 
     .card {
-        flex: 0 0 120px;
+        flex: 0 60px 60px;
         margin: 10px;
     }
 
     .card img {
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
 
     .card h3 {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .card p {
@@ -197,7 +199,11 @@
         font-size: 2rem;
     }
 
+    .skills-section{
+        padding: 10px;
+    }
+
     .content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
