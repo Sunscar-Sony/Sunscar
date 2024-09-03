@@ -1,0 +1,138 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-logo-heading {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-heading {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+    color: #f0a500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-heading:hover {
+    color: #e09b00;
+  }
+  
+  .footer-quick-links {
+    text-align: center;
+  }
+  
+  .footer-quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-quick-links ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-quick-links ul li a:hover {
+    color: #f0a500;
+  }
+  
+  .footer-connect-form {
+    text-align: center;
+  }
+  
+  .footer-connect-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-connect-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .footer-connect-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+  }
+  
+  .footer-connect-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0a500;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-connect-form button:hover {
+    background-color: #e09b00;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .footer-column {
+      text-align: center;
+    }
+  
+    .footer-logo {
+      width: 100px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
