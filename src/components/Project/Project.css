@@ -164,37 +164,40 @@
   display: none;
 }
 
-/* Modal Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.697);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
+  position: fixed;
   align-items: center;
   z-index: 1000;
   animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 30px;
+  max-width: 680px;
   width: 100%;
+  margin: 16px;
   text-align: center;
   position: relative;
   animation: slideUp 0.4s ease;
+  font-family: poppins, sans-serif;
 }
 
 .modal-content img {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .close-modal {
@@ -202,7 +205,7 @@
   border: none;
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -277,7 +280,20 @@
   }
 
   .custom-button {
-    min-width: 200px;
-    font-size: 16px;
+    min-width: 140px;
+    font-size: 1rem;
+  }
+
+  .project-card{
+    width: 90%;
+    height: auto;
+  }
+
+  .project-card-heading{
+    font-weight: 1.2rem;
+  }
+
+  .project-card-content{
+    font-size: 1rem;
   }
 }

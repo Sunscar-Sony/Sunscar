@@ -23,7 +23,7 @@ const About = () => {
     <div className="about-container" id="about">
 <div className="about-image-wrapper">
         <div className="about-image main-image">
-          <img src="/about/about.svg" alt="About Me" />
+          <img src="/about/about-logo.png" alt="About Me" />
         </div>
         <div className="about-image scattered-image image-1">
           <img src="/about/img-1.png" alt="Small Image 1" />

@@ -142,7 +142,6 @@ const Project = () => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <img src={modalContent.image} alt={modalContent.heading} />
             <h2>{modalContent.heading}</h2>
-            <p>{modalContent.content}</p>
             <button className="close-modal" onClick={closeModal}>
               Close
             </button>

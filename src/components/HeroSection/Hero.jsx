@@ -70,7 +70,7 @@ const Hero = () => {
           className="hero-image"
         />
         <img
-          src=" /images/hero-circle.svg"
+          src=" /images/hero-circle.png"
           alt="Rotating Ring"
           className="ring-image"
         />        
